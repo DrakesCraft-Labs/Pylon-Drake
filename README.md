@@ -1,3 +1,9 @@
+> [!NOTE]
+> **Fork de mantenimiento de DrakesCraft-Labs.** Basado en `pylonmc/pylon` para
+> conservar parches de compatibilidad con Paper 1.21.11 y Java 21 usados por
+> DrakesCraft. `upstream` mantiene la referencia original; las decisiones de
+> despliegue siguen requiriendo build y validación controlada.
+
 ## What is Pylon?
 Pylon is an upcoming Minecraft Java technology plugin that will hugely expand vanilla gameplay with new content: electricity, diesel machines, new fluids and fluid pipes, logistics, and much, much more!
 
