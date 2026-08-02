@@ -16,6 +16,7 @@ plugins {
 group = "io.github.pylonmc"
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven("https://central.sonatype.com/repository/maven-snapshots/")
     maven("https://repo.papermc.io/repository/maven-public/") {
@@ -33,7 +34,7 @@ val rebarVersion = project.properties["rebar.version"] as String
 val minecraftVersion = project.properties["minecraft.version"] as String
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:$minecraftVersion.build.+")
+    compileOnly("io.papermc.paper:paper-api:$minecraftVersion-R0.1-SNAPSHOT")
     compileOnly("io.github.pylonmc:rebar:$rebarVersion")
 
     implementation("org.bstats:bstats-bukkit:2.2.1")
@@ -47,7 +48,7 @@ idea {
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
     withSourcesJar()
     withJavadocJar()
 }
